@@ -15,8 +15,9 @@
       var frp = require('frpjs'),
           input = frp.dom.select('input'),
           submitEvents = frp.dom.onSubmit(frp.dom.select('form')),
+          filteredEvents = frp.dom.filter(submitEvents,() => !!input.value.length);
           
-
+      filteredEvents(e => )
     </script>
   </div>
 </body>
